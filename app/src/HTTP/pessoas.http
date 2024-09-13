@@ -1,0 +1,28 @@
+@url = https://8080-henriquerom-javarestapi-gngwcxnr2l0.ws-us116.gitpod.io
+
+###
+POST {{url}}/pessoas
+Content-Type: application/json
+
+{
+ "nome": "Luis",
+ "idade": 18
+}
+
+###
+GET {{url}}/pessoas
+
+###
+GET {{url}}/pessoas/3
+
+###
+PUT {{url}}/pessoas/1
+Content-Type: application/json
+
+{
+    "nome": "Teste123",
+    "idade": 18
+}
+
+###
+DELETE {{url}}/pessoas/3
